@@ -1,21 +1,23 @@
+import veiculos.Carro;
+
 public class Main {
+    public static void main(String[] args){
+        Carro carro1 = new Carro( "BMW",  "320I","Azul", 2020);
+        Carro carro2 = new Carro( "BMW",  "140","Laranja", 2023);
+        Carro carro3 = new Carro( "BMW",  "520I","Preta", 2021);
+        Carro carro4 = new Carro( "BMW",  "120I","Branca", 2019);
 
-    //public static void main(String[] args) {
-        //String nome = "Paulo";
-        //System.out.println("Helo ".toUpperCase() + nome.toUpperCase());
-        //}
-    //
-//
-//}
+        System.out.println(carro1);
+        carro1.acelerar();
+        System.out.println(carro2);
+        carro2.frear();
+        System.out.println(carro3);
+        System.out.println(carro4);
 
-    public static void main(String[] args) {
+        System.out.println("Marca: " + carro1.marca);
+        System.out.println("Modelo: "+ carro1.modelo);
 
-        Operacao operacao = new Operacao();
-        operacao.soma(2.0, 2.5);
-        operacao.sub(2.00 , 2.5);
-        operacao.mult(2.00 , 2.5);
-        operacao.divi(2.00 , 2.5);
+
+
     }
-
-
-  }
+}
